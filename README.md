@@ -1299,7 +1299,7 @@ kod
   **[⬆ do góry](#table-of-contents)**
 
 
-## Moduły <a name='moduly'></a>
+## <a name='moduly'></a> Moduły 
 
   - Deklarację modułu rozpoczynaj znakiem `!`. Zapewnia to poprawne działanie modułu w każdych  warunkach, również po połączeniu skryptu z plikiem w którym, przykładowo, brakuje średnika na końcu innego modułu. [Wytłumaczenie](https://github.com/airbnb/javascript/issues/44#issuecomment-13063933).
   - Pliki nazywaj stosując sposób zapisu camelCase. Moduły powinny znajdować się w plikach o odpowiadającej im nazwie, w odpowiadającym im folderom. Każdy moduł powinien również posiadać jedną, unikalną, globalną referencję - jeżeli jest ona potrzebna.
