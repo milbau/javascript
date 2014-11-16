@@ -5,37 +5,37 @@
 
 ## Spis Treści
 
-  1. [Typy](#types)
-  1. [Obiekty](#objects)
-  1. [Tablice](#arrays)
-  1. [Stringi](#strings)
-  1. [Funkcje](#functions)
-  1. [Własności](#properties)
-  1. [Zmienne](#variables)
+  1. [Typy](#typy)
+  1. [Obiekty](#obiekty)
+  1. [Tablice](#tablice)
+  1. [Stringi](#stringi)
+  1. [Funkcje](#funkcje)
+  1. [Własności](#wlasnosci)
+  1. [Zmienne](#zmienne)
   1. [Hoisting](#hoisting)
-  1. [Warunki i równości](#conditional-expressions--equality)
-  1. [Bloki kodu](#blocks)
-  1. [Komentarze](#comments)
-  1. [Białe znaki](#whitespace)
-  1. [Przecinki](#commas)
-  1. [Średniki](#semicolons)
-  1. [Rzutowania i korekcje typów](#type-casting--coercion)
-  1. [Nazwy zmiennych i funkcji](#naming-conventions)
-  1. [Gettery i settery](#accessors)
-  1. [Konstruktory](#constructors)
-  1. [Eventy](#events)
-  1. [Moduły](#modules)
+  1. [Warunki i równości](#warunki-i-rownosci)
+  1. [Bloki kodu](#bloki-kodu)
+  1. [Komentarze](#komentarze)
+  1. [Białe znaki](#biale-znaki)
+  1. [Przecinki](#przecinki)
+  1. [Średniki](#sredniki)
+  1. [Rzutowania i korekcje typów](#rzutowania-i-korekcje-typow)
+  1. [Nazwy zmiennych i funkcji](#nazwy-zmiennych-i-funkcji)
+  1. [Gettery i settery](#gettery-i-settery)
+  1. [Konstruktory](#konstruktory)
+  1. [Eventy](#eventy)
+  1. [Moduły](#moduly)
   1. [jQuery](#jquery)
-  1. [Standard ECMAScript 5](#ecmascript-5-compatibility)
-  1. [Testowanie](#testing)
-  1. [Wydajność](#performance)
-  1. [Więcej do czytania](#resources)
-  1. [Kto właściwie z tego korzysta w praktyce](#in-the-wild)
-  1. [Tłumaczenia](#translation)
-  1. [Poradnik do poradnika tego poradnika](#the-javascript-style-guide-guide)
-  1. [Pogadaj z nami o JavaScript'cie](#chat-with-us-about-javascript)
-  1. [Współtwórcy](#contributors)
-  1. [Licencja](#license)
+  1. [Standard ECMAScript 5](#standard-ecmascript-5)
+  1. [Testowanie](#testowanie)
+  1. [Wydajność](#wydajnosc)
+  1. [Więcej do czytania](#wiecej-do-czytania)
+  1. [Kto właściwie z tego korzysta w praktyce](#kto-wlasciwie-z-tego-korzysta-w-praktyce)
+  1. [Tłumaczenia](#tlumaczenia)
+  1. [Poradnik do poradnika tego poradnika](#poradnik-do-poradnika-tego-poradnika)
+  1. [Pogadaj z nami o JavaScript'cie](#pogadaj-z-nami-o-javascriptcie)
+  1. [Współtwórcy](#wspoltworcy)
+  1. [Licencja](#licencja)
 
 ## Typy
 
@@ -317,7 +317,7 @@
 
 
 
-## Własności
+## <a name='wlasnosci'></a> Własności
 
   - Jeżeli nazwa parametru obiektu jest statyczna i znasz ją, używaj kropki, aby odczytać wartość tego parametru.
 
@@ -556,7 +556,7 @@
 
 
 
-## Warunki i równości
+## <a name='warunki-i-rownosci'></a> Warunki i równości
 
   - Używaj `===` i `!==` zamiast `==` i `!=`.
   - Wyrażenia warunkowe zawsze rzutowane są przy pomocy metody toBoolean(), której zasada działania wyglądaja następująco:
@@ -725,7 +725,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Białe znaki
+## <a name='biale-znaki'></a> Białe znaki
 
   - Używaj tabulatorów o szerokości 2 spacji.
 
@@ -902,7 +902,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Średniki
+## <a name='sredniki'></a> Średniki
 
   - **Tak.**
 
@@ -931,7 +931,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Rzutowania i korekcje typów
+## <a name='rzutowania-i-korekcje-typow'></a> Rzutowania i korekcje typów 
 
   - Jeżeli to konieczne, dokonuj korekcji typu na początku wyrażenia.
   - Rzutowanie Stringów:
@@ -1299,7 +1299,7 @@ kod
   **[⬆ do góry](#table-of-contents)**
 
 
-## Moduły
+## Moduły <a name='moduly'></a>
 
   - Deklarację modułu rozpoczynaj znakiem `!`. Zapewnia to poprawne działanie modułu w każdych  warunkach, również po połączeniu skryptu z plikiem w którym, przykładowo, brakuje średnika na końcu innego modułu. [Wytłumaczenie](https://github.com/airbnb/javascript/issues/44#issuecomment-13063933).
   - Pliki nazywaj stosując sposób zapisu camelCase. Moduły powinny znajdować się w plikach o odpowiadającej im nazwie, w odpowiadającym im folderom. Każdy moduł powinien również posiadać jedną, unikalną, globalną referencję - jeżeli jest ona potrzebna.
@@ -1412,7 +1412,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Wydajność (wszystkie artykuły w j. angielskim)
+## <a name='wydajnosc'></a> Wydajność (wszystkie artykuły w j. angielskim) 
 
   - [On Layout & Web Performance](http://kellegous.com/j/2013/01/26/layout-performance/)
   - [String vs Array Concat](http://jsperf.com/string-vs-array-concat/2)
@@ -1426,7 +1426,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Więcej do czytania ( również po angielskiemu )
+## <a name='wiecej-do-czytania'></a> Więcej do czytania ( również po angielskiemu ) 
 
 
 **To koniecznie**
@@ -1491,7 +1491,7 @@ kod
 
 **[⬆ do góry](#table-of-contents)**
 
-## Kto właściwie z tego korzysta w praktyce
+## <a name='kto-wlasciwie-z-tego-korzysta-w-praktyce'></a> Kto właściwie z tego korzysta w praktyce 
 
   Oto lista organizacji, które używały lub wciąż używają tego sposobu zapisu JavaScript'a. Jeżeli chcesz niej się dopisać stwórz osobny pull request, a my zajmiemy sie resztą.
 
@@ -1534,7 +1534,7 @@ kod
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-## Tłumaczenia
+## <a name='tlumaczenia'></a> Tłumaczenia 
 
   Ten poradnik jest dostępny w wielu różnych językach:
 
@@ -1555,13 +1555,13 @@ kod
 
   - [Dokumentacja](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
 
-## Pogadaj z nami o JavaScript'cie
+## Pogadaj z nami o JavaScript'cie 
 
   [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
   - Czat dostępny na [gitter](https://gitter.im/airbnb/javascript).
 
-## Współtwórcy
+## <a name='wspoltworcy'></a> Współtwórcy
 
   - [Zobacz listę](https://github.com/airbnb/javascript/graphs/contributors)
 
