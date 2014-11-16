@@ -19,7 +19,7 @@
   1. [Białe znaki](#biale-znaki)
   1. [Przecinki](#przecinki)
   1. [Średniki](#sredniki)
-  1. [Rzutowania i korekcje typów](#rzutowaniai-i-korekcje-typow)
+  1. [Rzutowania i korekcje typów](#rzutowania-i-korekcje-typow)
   1. [Nazwy zmiennych i funkcji](#nazwy-zmiennych-i-funkcji)
   1. [Gettery i settery](#gettery-i-settery)
   1. [Konstruktory](#konstruktory)
@@ -317,7 +317,7 @@
 
 
 
-## Własności <a name='wlasnosci'></a>
+## <a name='wlasnosci'></a> Własności
 
   - Jeżeli nazwa parametru obiektu jest statyczna i znasz ją, używaj kropki, aby odczytać wartość tego parametru.
 
@@ -556,7 +556,7 @@
 
 
 
-## Warunki i równości <a name='warunki-i-rownosci'></a>
+## <a name='warunki-i-rownosci'></a> Warunki i równości
 
   - Używaj `===` i `!==` zamiast `==` i `!=`.
   - Wyrażenia warunkowe zawsze rzutowane są przy pomocy metody toBoolean(), której zasada działania wyglądaja następująco:
@@ -725,7 +725,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Białe znaki <a name='biale-znaki'></a>
+## <a name='biale-znaki'></a> Białe znaki
 
   - Używaj tabulatorów o szerokości 2 spacji.
 
@@ -902,7 +902,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Średniki <a name='sredniki'></a>
+## <a name='sredniki'></a> Średniki
 
   - **Tak.**
 
@@ -931,7 +931,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Rzutowania i korekcje typów <a name='rzutowania-i-korekcje-typow'></a>
+## <a name='rzutowania-i-korekcje-typow'></a> Rzutowania i korekcje typów 
 
   - Jeżeli to konieczne, dokonuj korekcji typu na początku wyrażenia.
   - Rzutowanie Stringów:
@@ -1412,7 +1412,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Wydajność (wszystkie artykuły w j. angielskim) <a name='wydajnosc'></a>
+## <a name='wydajnosc'></a> Wydajność (wszystkie artykuły w j. angielskim) 
 
   - [On Layout & Web Performance](http://kellegous.com/j/2013/01/26/layout-performance/)
   - [String vs Array Concat](http://jsperf.com/string-vs-array-concat/2)
@@ -1426,7 +1426,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Więcej do czytania ( również po angielskiemu ) <a name='wiecej-do-czytania'></a>
+## <a name='wiecej-do-czytania'></a> Więcej do czytania ( również po angielskiemu ) 
 
 
 **To koniecznie**
@@ -1491,7 +1491,7 @@ kod
 
 **[⬆ do góry](#table-of-contents)**
 
-## Kto właściwie z tego korzysta w praktyce <a name='kto-wlasciwie-z-tego-korzysta-w-praktyce'></a>
+## <a name='kto-wlasciwie-z-tego-korzysta-w-praktyce'></a> Kto właściwie z tego korzysta w praktyce 
 
   Oto lista organizacji, które używały lub wciąż używają tego sposobu zapisu JavaScript'a. Jeżeli chcesz niej się dopisać stwórz osobny pull request, a my zajmiemy sie resztą.
 
@@ -1534,7 +1534,7 @@ kod
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-## Tłumaczenia <a name='tlumaczenia'></a>
+## <a name='tlumaczenia'></a> Tłumaczenia 
 
   Ten poradnik jest dostępny w wielu różnych językach:
 
@@ -1561,7 +1561,7 @@ kod
 
   - Czat dostępny na [gitter](https://gitter.im/airbnb/javascript).
 
-## Współtwórcy
+## <a name='wspoltworcy'></a> Współtwórcy
 
   - [Zobacz listę](https://github.com/airbnb/javascript/graphs/contributors)
 
