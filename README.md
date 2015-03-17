@@ -1,6 +1,6 @@
 # Dobre Praktyki JavaScriptu by Airbnb() {
 
-*Najbardziej sensowne podejście do programowania w JavaScript'cie*
+*Najbardziej sensowne podejście do programowania w JavaScripcie*
 
 
 ## Spis Treści
@@ -33,13 +33,13 @@
   1. [Kto właściwie z tego korzysta w praktyce](#kto-wlasciwie-z-tego-korzysta-w-praktyce)
   1. [Tłumaczenia](#tlumaczenia)
   1. [Poradnik do poradnika tego poradnika](#poradnik-do-poradnika-tego-poradnika)
-  1. [Pogadaj z nami o JavaScript'cie](#pogadaj-z-nami-o-javascriptcie)
+  1. [Pogadaj z nami o JavaScripcie](#pogadaj-z-nami-o-javascriptcie)
   1. [Współtwórcy](#wspoltworcy)
   1. [Licencja](#licencja)
 
 ## Typy
 
-  - **Typy prymitywne**: Kiedy operujesz na prymitywach, działasz bezpośrednio na ich wartościach. Zmienne prymitywne to:
+  - **Typy proste**: Operując na typach prostych, działasz bezpośrednio na ich wartościach. Typy proste to:
 
     + `string`
     + `number`
@@ -55,7 +55,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Typy złożone**: Pracując ze zmienną o złożonym typie, modyfikujesz wartość schowaną za referencją/wskaźnikiem. Zmienne zlożone to:
+  - **Typy złożone**: Pracując ze zmienną o złożonym typie, modyfikujesz wartość wskazywaną przez referencję/wskaźnik. Typy złożone to:
 
     + `object`
     + `array`
@@ -123,7 +123,7 @@
 
 ## Tablice
 
-  - Używaj nawiasów kwadratowych do tworzenia tabic, zamiast konstruktorów.
+  - Używaj nawiasów kwadratowych do tworzenia tablic, zamiast konstruktorów.
 
     ```javascript
     // źle
@@ -176,7 +176,7 @@
 
 ## Stringi
 
-  - Używaj pojedynczego cudysłowu podczas zapisywania String'ów.
+  - Używaj pojedynczego cudzysłowu podczas zapisywania Stringów.
 
     ```javascript
     // źle
@@ -193,7 +193,7 @@
     ```
 
   - Tekst dłuższy niż 80 znaków powinieneś zapisywać dzieląc go na kilka osobnych linii.
-  - Jedna uwaga: Przy nadmiernym stosowaniu powyższej zasady, łączone String'i mogą wpływać negatywnie na działanie aplikacji. [jsPerf](http://jsperf.com/ya-string-concat) & [Dyskusja na GitHub](https://github.com/airbnb/javascript/issues/40)
+  - Jedna uwaga: Przy nadmiernym stosowaniu powyższej zasady, łączone Stringi mogą wpływać negatywnie na działanie aplikacji. [jsPerf](http://jsperf.com/ya-string-concat) & [Dyskusja na GitHub](https://github.com/airbnb/javascript/issues/40)
 
     ```javascript
     // źle
@@ -260,7 +260,7 @@
 
 ## Funkcje
 
-  - Sposoby zapisu funkcji w JavaScript'cie:
+  - Sposoby zapisu funkcji w JavaScripcie:
 
     ```javascript
     // funkcja anonimowa
@@ -280,7 +280,7 @@
     ```
 
   - Nigdy nie deklaruj nowej funkcji w bloku warunkowym ani iteracyjnym (if, while itp).  Przeglądarki pozwolą Ci na takie deklarowanie, ale każda będzie interpretowała to na swój sposób. Zamiast tego zapisuj funkcje przy pomocy zmiennej.
-  - **Note:** ECMA-262 definiuje blok jako listę komend. Deklaracja funkcji to nie komenda. [Więcej o ECMA-262's i tym problemie](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
+  - **Note:** ECMA-262 definiuje blok jako listę komend. Deklaracja funkcji to nie komenda. [Więcej o ECMA-262 i tym problemie](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
 
     ```javascript
     // źle
@@ -364,7 +364,7 @@
     var superPower = new SuperPower();
     ```
 
-  - Jeżeli tworzysz kilka zmiennych, używaj do tego pojedynczego słówka 'var', a kolejne zmienne dodawaj w nowych linijkach, oddzielając jest przecinkami.
+  - Jeżeli tworzysz kilka zmiennych, używaj do tego pojedynczego słówka 'var', a kolejne zmienne dodawaj w nowych linijkach, oddzielając je przecinkami.
 
     ```javascript
     // źle
@@ -378,7 +378,7 @@
         dragonball = 'z';
     ```
 
-  - Niezdefiniowane zmienne deklaruj na końcu. Dzięku temu będziesz miał zawsze możliwość nadania im wartości na bazie wcześniej utworzonych zmiennych.
+  - Niezdefiniowane zmienne deklaruj na końcu. Dzięki temu będziesz miał zawsze możliwość nadania im wartości na bazie wcześniej utworzonych zmiennych.
 
     ```javascript
     // źle
@@ -400,7 +400,7 @@
         i;
     ```
 
-  - Nowe zmienne deklaruj zawsze na początku bloku w którym je tworzysz ( na początku scope'a ). JavaScript w przeciwnym razie przeniesie je tam za Ciebie 'w tle', a to może doprowadzić do niespodziewanych błędów ( Więcej w części - Hoisting ).
+  - Nowe zmienne deklaruj zawsze na początku bloku w którym je tworzysz ( na początku scope'u ). JavaScript w przeciwnym razie przeniesie je tam za Ciebie 'w tle', a to może doprowadzić do niespodziewanych błędów ( Więcej w części - Hoisting ).
 
     ```javascript
     // źle
@@ -463,7 +463,7 @@
 
 ## Hoisting
 
-  - Deklaracje zmiennych są automatycznie przenoszone przez JavaScript na początek bloku w którym zostały utworzone i w którym działają - tzw. scope'a. Przypisywane wartości nie są przenoszone. Dla osób, które zwykle używały języków C++/Java może się to wydać z początku lekko nielogiczne, ponieważ JavaScript pozwala na użycie zmiennej, która w danym miejscu w kodzie jeszcze nie istnieje.
+  - Deklaracje zmiennych są automatycznie przenoszone przez JavaScript na początek bloku w którym zostały utworzone i w którym działają - w obrębie tzw. scope'u. Przypisywane wartości nie są przenoszone. Dla osób, które zwykle używały języków C++/Java może się to wydać z początku lekko nielogiczne, ponieważ JavaScript pozwala na użycie zmiennej, która w danym miejscu w kodzie jeszcze nie istnieje.
 
     ```javascript
     // to nie powinno zadziałać (o ile tylko
@@ -483,7 +483,7 @@
     }
 
     // poprzedni przykład, w rozumieniu interpretera
-    // JavaScript'u, wygląda tak:
+    // JavaScriptu, wygląda tak:
     function example() {
       var declaredButNotAssigned;
       console.log(declaredButNotAssigned); // => undefined
@@ -492,7 +492,7 @@
     ```
 
   - Anonimowe funkcje zapisane w zmiennych działają na podobnej zasadzie. Ich nazwa zostaje
-    przeniesiona na początek scope'a, a sama wartość, tj. wnętrze funkcji, pozostaje na swoim
+    przeniesiona na początek scope'u, a sama wartość, tj. wnętrze funkcji, pozostaje na swoim
     miejscu.
 
     ```javascript
@@ -507,7 +507,7 @@
     }
     ```
 
-  - Funkcje zapisane w zmiennych, posiadające swoją własną nazwę, tracą ją. Na początek scope'a
+  - Funkcje zapisane w zmiennych, posiadające swoją własną nazwę, tracą ją. Na początek scope'u
     wyniesiona zostaje nazwa zmiennej do której funkcja została przypisana.
 
     ```javascript
@@ -667,7 +667,7 @@ kod
     }
     ```
 
-  - Zapisu `//` używaj do krótkich, jednolinijkowych komentarzy. Komentarze umieszczaj linijkę ponad opisywanymi elementami. Nad komentarzami dodawaj też jedną pustą linijkę, dla czytelności.
+  - Zapisu `//` używaj do krótkich, mieszących się w jednej linii komentarzy. Komentarze umieszczaj linijkę ponad opisywanymi elementami. Nad komentarzami dodawaj też jedną pustą linijkę, dla czytelności.
 
     ```javascript
     // źle
@@ -680,7 +680,7 @@ kod
     // źle
     function getType() {
       console.log('fetching type...');
-      // ustaw domyslny typ na 'brak typu'
+      // ustaw domyślny typ na 'brak typu'
       var type = this._type || 'brak typu';
 
       return type;
@@ -806,7 +806,7 @@ kod
     })(this);↵
     ```
 
-  - Chain'ując metody wywołane na jednym elemencie, rozdzielaj je przy pomocy nowych linii i spacji.
+  - Łącząc metody wywołane na jednym elemencie w łańcuch, rozdzielaj je przy pomocy nowych linii i spacji.
 
     ```javascript
     // źle
@@ -919,7 +919,7 @@ kod
       return name;
     })();
 
-    // dobrze (taki zapis zapewnia poprawne działanie funkcji przed i po minimalizacji kodu przy pomocy np. Grunt'a, concat'a itp.)
+    // dobrze (taki zapis zapewnia poprawne działanie funkcji przed i po minimalizacji kodu przy pomocy np. Grunta, concata itp.)
     ;(function() {
       var name = 'Skywalker';
       return name;
@@ -988,7 +988,7 @@ kod
     var val = inputValue >> 0;
     ```
 
-  - **Note:** Uważaj z rzutowaniem poprzez przesunięcie bitowe, jeżeli nie masz doświadczenia. Liczby przedstawione są w systemie jako [wartości 64-bitowe](http://es5.github.io/#x4.3.19), ale przesunięcia w JavaScript'cie zwracają zawsze 32-bitową liczbę ([źródło](http://es5.github.io/#x11.7)). Przesunięcia mogą przez to zachowywać się w dziwny sposób na liczbach przekraczających 32-bity ( [Dyskusja na temat](https://github.com/airbnb/javascript/issues/109) ). Największa liczba 32-bitowa to 2,147,483,647. Przykładowe przesunięcia i ich wyniki:
+  - **Note:** Uważaj z rzutowaniem poprzez przesunięcie bitowe, jeżeli nie masz doświadczenia. Liczby przedstawione są w systemie jako [wartości 64-bitowe](http://es5.github.io/#x4.3.19), ale przesunięcia w JavaScripcie zwracają zawsze 32-bitową liczbę ([źródło](http://es5.github.io/#x11.7)). Przesunięcia mogą przez to zachowywać się w dziwny sposób na liczbach przekraczających 32-bity ( [Dyskusja na temat](https://github.com/airbnb/javascript/issues/109) ). Największa liczba 32-bitowa to 2,147,483,647. Przykładowe przesunięcia i ich wyniki:
 
     ```javascript
     2147483647 >> 0 //=> 2147483647
@@ -1030,7 +1030,7 @@ kod
     }
     ```
 
-  - Używaj camelCase'a podczas nazywania zmiennych, funkcji i obiektów.
+  - Używaj konwencji camelCase podczas nazywania zmiennych, funkcji i obiektów.
 
     ```javascript
     // bad
@@ -1049,7 +1049,7 @@ kod
     });
     ```
 
-  - Używaj PascalCase'a kiedy nadajesz nazwy konstruktorom i klasom.
+  - Używaj konwencji PascalCase nadając nazwy konstruktorom i klasom.
 
     ```javascript
     // źle
@@ -1110,7 +1110,7 @@ kod
     }
     ```
 
-  - Nazywaj swoje funkcje, nawet jeżeli zapisujesz je do zmiennych. Pomaga to przy debuggowaniu.
+  - Nazywaj swoje funkcje, nawet jeżeli zapisujesz je do zmiennych. Pomaga to przy debugowaniu.
 
     ```javascript
     // źle
@@ -1213,7 +1213,7 @@ kod
     };
     ```
 
-  - Zwracanie na końcu metod zmiennej `this` umożliwia stosowanie w kodzie chain'owania.
+  - Zwracanie na końcu metod zmiennej `this` umożliwia łączenie metod w łańcuchy.
 
     ```javascript
     // źle
@@ -1248,7 +1248,7 @@ kod
     ```
 
 
-  - Tworzenie własnej wersji konwertera toString() jest ok, jednak upewnij się, że Twoja metoda będzie działać w odpowiedni sposób i nie spowoduje bałąganu w kodzie.
+  - Tworzenie własnej wersji konwertera toString() jest ok, jednak upewnij się, że Twoja metoda będzie działać w odpowiedni sposób i nie spowoduje bałaganu w kodzie.
 
     ```javascript
     function Jedi(options) {
@@ -1268,9 +1268,9 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## Eventy
+## Zdarzenia
 
-  - Wywołując event w aplikacji, utwórz nowy obiekt dla parametrów eventu i dopiero w nim dodaj zmienne, które chcesz wysłać. Dzięki temu kolejni programiści aplikacji będą mogli dodawać własne wartości do eventu, bez obaw, że nadpiszą Twoje zmienne. Przykładowo:
+  - Wywołując zdarzenie w aplikacji, utwórz nowy obiekt dla parametrów zdarzenia i dopiero w nim dodaj zmienne, które chcesz wysłać. Dzięki temu kolejni programiści aplikacji będą mogli dodawać własne wartości do zdarzenia, bez obaw, że nadpiszą Twoje zmienne. Przykładowo:
 
     ```js
     // źle
@@ -1283,7 +1283,7 @@ kod
     });
     ```
 
-    Zamiast tego lepiej jest używać tej formy:
+    Zamiast tego lepiej jest używać tej postaci:
 
     ```js
     // dobrze
@@ -1426,7 +1426,7 @@ kod
 **[⬆ do góry](#table-of-contents)**
 
 
-## <a name='wiecej-do-czytania'></a> Więcej do czytania ( również po angielskiemu ) 
+## <a name='wiecej-do-czytania'></a> Więcej do czytania ( również po angielsku ) 
 
 
 **To koniecznie**
@@ -1435,17 +1435,17 @@ kod
 
 **Narzędzia do formatowania**
 
-  - Upiękniacze kodu
+  - Upiększacze kodu
     + [JSHint](http://www.jshint.com/) - [Airbnb Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/jshintrc)
     + [JSCS](https://github.com/jscs-dev/node-jscs) - [Airbnb Style Preset](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
 
-**Inne, duże poradniki dotyczące stylistyki kodu**
+**Inne, duże poradniki dotyczące formatowania kodu**
 
   - [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
   - [jQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
   - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwldrn/idiomatic.js/)
 
-**Pojedyncze artykuły i mniej popularne stylistyki kodu**
+**Pojedyncze artykuły i mniej popularne formatowania kodu**
 
   - [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
   - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52) - Ross Allen
@@ -1493,7 +1493,7 @@ kod
 
 ## <a name='kto-wlasciwie-z-tego-korzysta-w-praktyce'></a> Kto właściwie z tego korzysta w praktyce 
 
-  Oto lista organizacji, które używały lub wciąż używają tego sposobu zapisu JavaScript'a. Jeżeli chcesz niej się dopisać stwórz osobny pull request, a my zajmiemy sie resztą.
+  Oto lista organizacji, które używały lub wciąż używają tego sposobu zapisu JavaScriptu. Jeżeli chcesz niej się dopisać stwórz osobny pull request, a my zajmiemy sie resztą.
 
   - **Aan Zee**: [AanZee/javascript](https://github.com/AanZee/javascript)
   - **Airbnb**: [airbnb/javascript](https://github.com/airbnb/javascript)
@@ -1555,7 +1555,7 @@ kod
 
   - [Dokumentacja](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
 
-## Pogadaj z nami o JavaScript'cie 
+## Pogadaj z nami o JavaScripcie 
 
   [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
